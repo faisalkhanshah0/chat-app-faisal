@@ -1,0 +1,71 @@
+li{
+  
+  list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#users-box li{
+    margin: 5px 0 5px -50px;
+}
+#messages li{
+
+}
+.header_app{
+    height: 50px;
+    background-color: black;
+}
+.header_app a{
+    /* line-height: 45px;
+    color: lightgrey;
+    text-decoration: none;
+    font-size: 25px; */
+}
+#message_form{
+    width: 100%;
+}
+#message {
+    width: 100%;
+}
+#send_form{
+    width: 100%;
+}
+#send{
+    width: 100%;
+}
+#sharelocation_form{
+    width: 100%;
+}
+#sharelocation{
+    width: 100%;
+}
+.full-height{
+    height: 69%;
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .vertical-center {
+    display: flex;
+    align-items: center;
+  }
+  .join_box{
+      height: 85%;
+      width: 28%;
+  }
+  #join_room_button{
+      margin : 38px 0 10px 0;
+  }
+  .scroll-area{
+    width:100%;
+    height:70%;
+    float:left;
+    overflow-y:scroll;
+  }
+
+  .img-rounded-chat{
+    border-radius: 50%;
+  }

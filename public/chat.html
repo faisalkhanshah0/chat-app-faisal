@@ -1,0 +1,103 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Chat App ! Chat Page
+        </title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/stylesheet.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/lib/moment.min.js"></script>
+        <script src="js/lib/mustache.min.js"></script>
+        <script src="js/lib/deparam.js"></script>
+    </head>
+    <body>
+            <nav class="navbar navbar-inverse" >
+                <div class="header_app container-fluid">
+                        <div class="navbar-header">
+                                <a class="navbar-brand" href="#">Chat App - Developed by Faisal</a>
+                              </div>
+                              <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/"><span class="glyphicon glyphicon-log-out"></span> Leave</a></li>
+                              </ul>
+                </div>
+                
+            </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">
+                                <h4>People</h4>
+                        </div>
+                        <div class="panel-body text-center full-height">
+                            <ul id="users-box">
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                    <div class=" panel panel-default">
+                    <div class="panel-body scroll-area" id="message-box">
+                            
+                    </div>
+                    </div>
+                    <form class="form-inline" name="chat_form" id="chat_form">
+                        <div class="row">
+                        <div class="col-sm-7">    
+                        <div class="form-group form-group-lg" id="message_form">
+                            <input type="text" id="message" class="form-control input-lg" autofocus autocomplete="off" placeholder="Type here ...">
+                          
+                        </div>
+                        </div>
+                        <div class="col-sm-2">
+                        <div class="form-group form-group-lg" id="send_form"> 
+                            <button id="send" type="submit" class="btn btn-lg btn-primary">Send</button>
+                          
+                        </div>
+                        </div>
+                        <div class="col-sm-3">
+                        <div class="form-group form-group-lg" id="sharelocation_form"> 
+                                  <button id="sharelocation" type="submit" class="btn btn-lg btn-success">Share Location</button>
+                        </div>
+                        </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <script id="message-template" type="text/template">
+            <div class="media">
+                            <div class="media-left">
+                            <img src="images/avatar.png" class="media-object img-rounded-chat" style="width:45px">
+                            </div>
+                            <div class="media-body">
+                            <h4 class="media-heading">{{from}} <small><i>Sent at {{createdAt}}</i></small></h4>
+                            <p><em>{{text}}</em></p>
+                            </div>
+                        </div>
+        </script>
+        <script id="location-template" type="text/template">
+            <div class="media">
+                    <div class="media-left">
+                    <img src="images/avatar.png" class="media-object img-rounded-chat" style="width:45px">
+                    </div>
+                    <div class="media-body">
+                    <h4 class="media-heading">{{from}} <small><i>Sent at {{createdAt}}</i></small></h4>
+                    <p><a target="_blank" href="{{url}}">My Location</a></p>
+                    </div>
+                </div>
+        </script>
+        <script id="users-template" type="text/template">
+            <li>{{username}}</li>
+        </script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

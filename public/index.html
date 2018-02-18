@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Chat App ! Chat Page
+        </title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/stylesheet.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+            <nav class="navbar navbar-inverse" >
+                <div class="header_app container-fluid">
+                        <div class="navbar-header">
+                                <a class="navbar-brand" href="#">Chat App - Developed by Faisal</a>
+                        </div>
+                </div>
+                
+            </nav>
+                <div class="join_box container center-block vertical-center">
+                                <form action="/chat.html" method="GET">
+                                    <div class="form-group form-group-lg">
+                                      <label for="Name">Name:</label>
+                                      <input type="text" name="name" autofocus autocomplete="off" class="form-control input-lg" id="name">
+                                    </div>
+                                    <div class="form-group form-group-lg">
+                                      <label for="room">Room:</label>
+                                      <input type="text" name="room" autocomplete="off" class="form-control input-lg" id="room">
+                                    </div>
+                                    <button id="join_room_button" value="join" name="submit" type="submit" class="btn btn-lg btn-primary btn-block">Join Room</button>
+                                </form>
+                        
+                </div>
+            
+             
+    </body>
+</html>

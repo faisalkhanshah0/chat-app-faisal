@@ -1,0 +1,22 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "chat app by faisal",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "^8.5.0",
+    "npm": "^5.6.0"
+  },
+  "author": "faisal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "moment": "^2.20.1",
+    "socket.io": "^2.0.4",
+    "validator": "^9.2.0"
+  }
+}

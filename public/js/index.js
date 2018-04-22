@@ -104,6 +104,9 @@
                 createdAt : moment().format('hh:mm A')
                 }, function(data) {
                     // console.log('Got it.', data);
+                    $('#message').val('');
+                    $('#message').focus();
+
                 });
 
             });
